@@ -1,0 +1,387 @@
+﻿/* ------------------------------------------------------------------------------------
+--  GENERAL
+------------------------------------------------------------------------------------ */
+*{margin:0;padding:0;box-sizing: border-box;font-size: 100%;color:white;}
+img{width:100%;height:auto;}
+/* ------------------------------------------------------------------------------------
+--  TYPOGRAPHY
+------------------------------------------------------------------------------------ */
+h1{
+	font-size: 1.6em;
+	margin-bottom: 20px;
+	font-variant: small-caps;
+	}
+h2{
+	font-size: 1.4em;
+	color: #515151;
+	text-shadow: 0 1px 1px #fff;
+	padding-bottom: 10px;
+	margin-bottom: 1em;
+	text-transform: capitalize;
+	border-bottom: 1px solid #e2e2e2;
+}
+h3{
+	font-size: 25px;
+	color: white;
+	text-shadow: 0 1px 1px #fff;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	border-bottom: 1px solid blue;
+	}
+p{
+	font-size: 20px;
+	line-height: 25px;
+	color: white;
+	margin-bottom: 1em;
+	}
+a{
+	text-decoration: none;
+	outline: none;
+	color: #00bcd1;
+}
+a:hover{
+	color: #76d3de;
+}
+/* ------------------------------------------------------------------------------------
+--  body
+------------------------------------------------------------------------------------ */
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	}
+/* Slider wrapper*/
+.css-slider-wrapper {
+	display: block;
+	background: #FFF;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+/* Slider */
+.slider {
+	width: 100%;
+	height: 100%;
+	background: red;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	z-index: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	-webkit-transition: -webkit-transform 1600ms;
+	transition: -webkit-transform 1600ms, transform 1600ms;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	}
+.logo {
+	position: fixed;
+	top: 20px;
+	left: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 1em;
+	}
+.logo a {
+	text-decoration: none;
+	text-shadow:0 1px 1px #fff;
+	font-size: 2.5em;
+	color: white;
+	-ms-transition:all 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+				transition: all 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+	}
+.logo a:hover {
+	color: blue; 
+	}
+/* each slide backgound color */  
+.slide1 {
+	background: url(img/banner.jpg);
+	background-size: cover;
+	left: 0;
+	}
+.slide2 {
+	background: #009788;
+	left: 100%
+	}
+.slide3 {
+	background: #ff5608;
+	left: 200%
+	}
+.slide4 {
+	background: #E5BE01;
+	left: 300%;
+	}
+.slide5 {
+	background: green;
+	left: 400%;
+	}
+.slide6 {
+	background: gray;
+	left: 500%;
+	}
+.slide7 {
+	background: #601B69;
+	left: 600%;
+	}
+.slide8 {
+	background: red;
+	left: 700%;
+	}
+.slide9 {
+	background: #1E2460;
+	left: 800%;
+	}
+.slide10 {
+	background: black;
+	left: 900%;
+	}
+.slide11 {
+	background: #434B1B;
+	left: 1000%;
+	}
+.slider > div {
+  text-align: center;
+}
+/* Slider inner slide effect */
+.slider h2 {
+	color: #FFF;
+	font-weight: 900;
+	font-size: 40px;
+	margin-bottom: 20px;
+	opacity: 0;
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+	}
+.slider .button {
+	color: #FFF;
+	padding: 5px 30px;
+	background: rgba(255,255,255,0.3);
+	text-decoration: none;
+	opacity: 0;
+	font-size: 15px;
+	line-height: 30px;
+	display: inline-block;
+	-webkit-transform: translateX(-500px);
+	transform: translateX(-500px);
+	}
+.slider h2, .slider .button {
+	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
+	transition: transform 800ms, opacity 800ms;
+	-webkit-transition-delay: 1s; /* Safari */
+	transition-delay: 1s;
+	}
+.name {
+	position: absolute;
+	top: 0;
+	left: 7%;
+}
+.img {
+	width: 20%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	}
+.img img {
+	width: 100%;
+	height: auto;
+}
+.text {
+	width: 40%;
+	height: 90%;
+	position: absolute;
+	top: 6%;
+	right: 20%;
+	padding: 1% 2%;
+	border: 2px solid white;
+	font-size: 13px;
+}
+.text  p {
+	text-align: left;
+	
+}
+/* Next and Preive arrow */ 
+.control {
+	position: absolute;
+	top: 75%;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	z-index: 55;
+}
+.control label {
+	z-index: 0;
+	display: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 50px;
+	color: #FFF;
+	cursor: pointer;
+	opacity: 0.2;
+}
+.control label:hover {
+	opacity: 0.5;
+}
+.next {
+	right: 1%;
+}
+.previous {
+	left: 1%;
+	top: 75%;
+}
+/* ==========================================================================
+Navigation
+========================================================================== */
+.slider-pagination {
+	position: absolute;
+	top: 20px;
+	width:15%;
+	right: 0;
+	padding-right: 20px;
+	text-align: left;
+	font-size: 1em;
+	z-index: 1000;
+	}
+label {
+	font-weight: normal;
+	}
+.slider-pagination label {
+	height: 30px;
+	display: block;
+	margin: 0 1px;
+	border-bottom: solid 1px rgba(255,255,255,0.4);
+	cursor: pointer;
+	letter-spacing: 1px;
+		-ms-transition:all 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+				transition: all 2s cubic-bezier(0.1, 0.8, 0.5, 2);
+}
+.slider-pagination label:hover:not(:active){
+	color: blue;
+	border-bottom: solid 1px blue;
+	transition: .5s linear;
+	background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+/* Slider Pagger arrow event */
+.slide-radio1:checked ~ .next .numb2, 
+.slide-radio2:checked ~ .next .numb3, 
+.slide-radio3:checked ~ .next .numb4, 
+.slide-radio4:checked ~ .next .numb5, 
+.slide-radio5:checked ~ .next .numb6,
+.slide-radio6:checked ~ .next .numb7,
+.slide-radio7:checked ~ .next .numb8,
+.slide-radio8:checked ~ .next .numb9,
+.slide-radio9:checked ~ .next .numb10,
+.slide-radio10:checked ~ .next .numb11,
+.slide-radio2:checked ~ .previous .numb1, 
+.slide-radio3:checked ~ .previous .numb2, 
+.slide-radio4:checked ~ .previous .numb3,
+.slide-radio5:checked ~ .previous .numb4,
+.slide-radio6:checked ~ .previous .numb5,
+.slide-radio7:checked ~ .previous .numb6,
+.slide-radio8:checked ~ .previous .numb7,
+.slide-radio9:checked ~ .previous .numb8,
+.slide-radio10:checked ~ .previous .numb9,
+.slide-radio11:checked ~ .previous .numb10 {
+  display: block;
+  z-index: 1
+}
+
+/* Slider slide effect */
+.slide-radio1:checked ~ .slider {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+	}
+.slide-radio2:checked ~ .slider {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	}
+.slide-radio3:checked ~ .slider {
+	-webkit-transform: translateX(-200%);
+	transform: translateX(-200%);
+	}
+.slide-radio4:checked ~ .slider {
+	-webkit-transform: translateX(-300%);
+	transform: translateX(-300%);
+	}
+.slide-radio5:checked ~ .slider {
+	-webkit-transform: translateX(-400%);
+	transform: translateX(-400%);
+	}
+.slide-radio6:checked ~ .slider {
+	-webkit-transform: translateX(-500%);
+	transform: translateX(-500%);
+	}
+.slide-radio7:checked ~ .slider {
+	-webkit-transform: translateX(-600%);
+	transform: translateX(-600%);
+	}
+.slide-radio8:checked ~ .slider {
+	-webkit-transform: translateX(-700%);
+	transform: translateX(-700%);
+	}
+.slide-radio9:checked ~ .slider {
+	-webkit-transform: translateX(-800%);
+	transform: translateX(-800%);
+	}
+.slide-radio10:checked ~ .slider {
+	-webkit-transform: translateX(-900%);
+	transform: translateX(-900%);
+	}
+.slide-radio11:checked ~ .slider {
+	-webkit-transform: translateX(-1000%);
+	transform: translateX(-1000%);
+	}
+.slide-radio1:checked ~ .slide1 h2,  
+.slide-radio2:checked ~ .slide2 h2,  
+.slide-radio3:checked ~ .slide3 h2,  
+.slide-radio4:checked ~ .slide4 h2, 
+.slide-radio5:checked ~ .slide5 h2,
+.slide-radio6:checked ~ .slide6 h2, 
+.slide-radio7:checked ~ .slide7 h2, 
+.slide-radio8:checked ~ .slide8 h2, 
+.slide-radio9:checked ~ .slide9 h2, 
+.slide-radio10:checked ~ .slide10 h2, 
+.slide-radio11:checked ~ .slide11 h2,
+.slide-radio1:checked ~ .slide1 .button,  
+.slide-radio2:checked ~ .slide2 .button,  
+.slide-radio3:checked ~ .slide3 .button,  
+.slide-radio4:checked ~ .slide4 .button,
+.slide-radio5:checked ~ .slide5 .button,
+.slide-radio6:checked ~ .slide6 .button,
+.slide-radio7:checked ~ .slide7 .button,
+.slide-radio8:checked ~ .slide8 .button ,
+.slide-radio9:checked ~ .slide9 .button,
+.slide-radio10:checked ~ .slide10 .button ,
+.slide-radio11:checked ~ .slide11 .button{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1
+	}
+
+@media only screen and (max-width: 767px) {
+.slider h2 {
+	font-size: 20px;
+	}
+/*.slider > div {
+  padding: 0 2%
+}*/
+.control label {
+  font-size: 35px;
+}
+.slider .button {
+  padding: 0 15px;
+}
+}

@@ -1,0 +1,135 @@
+﻿@media only screen and (min-width: 768px) and (max-width: 990px){
+	.logo{
+		width: 40%;  
+		top: 10px;
+		left: 30px;
+		}
+	  .logo a {
+			font-size: 40px;  
+	  }
+	 .slider-pagination {
+		top: 25px;
+		width: 30%;
+		padding-right: 10px;
+		}
+	.slider-pagination label {
+		height: 25px;
+		}
+	.name{
+		position: absolute;
+		width: 25%;
+		top: 2%;
+		left: 5%;
+		}
+	.name h2{
+		font-size: 1.4em;
+		padding-bottom: 4px;
+		}
+	.img{
+		width: 20%;
+		top: 2%;
+		left: 40%;
+		}
+	.text {
+		width: 90%;
+		top: 55%;
+		right: 4%;
+		}
+		h3{
+		font-size: 25px;
+		}
+		p{
+		font-size: 17px;
+		line-height: 17px;
+		}
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+	.logo{
+		width: 30%;  
+		top: 10px;
+		left: 10px;
+		}
+	  .logo a {
+			font-size: 25px;  
+	  }
+	 .slider-pagination {
+		top: 5px;
+		width: 40%;
+		padding-right: 10px;
+		}
+	.slider-pagination label {
+		height: 22px;
+		}
+	.name{
+		position: absolute;
+		width: 40%;
+		top: 0;
+		left: 0;
+		}
+	.name h2{
+		font-size: 1.2em;
+		padding-bottom: 4px;
+		}
+	.img{
+		width: 40%;
+		top: 16%;
+		left: 4%;
+		}
+	.text {
+		width: 55%;
+		top: 43%;
+		right:0;
+		}
+	h3{
+		font-size: 20px;
+		}
+	p{
+		font-size: 15px;
+		line-height: 15px;
+		}
+}
+@media only screen and (max-width: 500px){
+	.logo{
+		width: 30%;  
+		top: 10px;
+		left: 10px;
+		}
+	  .logo a {
+			font-size: 20px;  
+	  }
+	 .slider-pagination {
+		top: 15px;
+		width: 60%;
+		padding-right: 10px;
+		}
+	.slider-pagination label {
+		height: 25px;
+		}
+	.name{
+		position: absolute;
+		width: 35%;
+		top: 0;
+		left: 0;
+		}
+	.name h2{
+		font-size: 1em;
+		padding-bottom: 3px;
+		}
+	.img{
+		width: 30%;
+		top: 17%;
+		left: 20px;
+		}
+	.text {
+		width: 90%;
+		top: 52%;
+		right: 5%;
+		}
+	h3{
+		font-size: 17px;
+		}
+	p{
+		font-size: 13px;
+		line-height: 15px;
+		}	
+}
